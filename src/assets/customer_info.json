@@ -1,0 +1,102 @@
+[
+    {
+        "id": "id",
+        "name": "id",
+        "label": "Customer ID",
+        "value": "",
+        "type": "text",
+        "validations": {
+          "required": true
+        }
+    },
+    {
+        "id": "firstname",
+        "name": "firstname",
+        "label": "First Name",
+        "value": "",
+        "type": "text",
+        "validations": [
+            {
+                "name": "required",
+                "validator": "required",
+                "message": "Name Required"
+              },
+              {
+                "name": "pattern",
+                "validator": "^[a-zA-Z]+$",
+                "message": "Accept only text"
+              }
+        ]
+    },
+    {
+        "id": "lastname",
+        "name": "lastname",
+        "label": "Last Name",
+        "value": "",
+        "type": "text",
+        "validations": {
+          "required": true
+        }
+    },
+    {
+        "id": "email",
+        "name": "email",
+        "label": "Email ID",
+        "value": "",
+        "type": "email",
+        "validations": {
+          "required": true
+        }
+    },
+    {
+        "id": "mobile",
+        "name": "mobile",
+        "label": "Phone Number",
+        "value": "",
+        "type": "text",
+        "validations": {
+          "required": true
+        }
+    },
+    {
+        "id": "par_address",
+        "name": "par_address",
+        "label": "Parmanent Address",
+        "value": "",
+        "type": "text-area",
+        "validations": {
+          "required": true
+        }
+    },
+    {
+        "id": "pre_address",
+        "name": "pre_address",
+        "label": "Present Address",
+        "value": "",
+        "type": "text-area",
+        "validations": {
+          "required": true
+        }
+    },
+    {
+        "id": "gender",
+        "name": "gender",
+        "label": "Gender",
+        "value": "",
+        "type": "text",
+        "validations": {
+          "required": true
+        }
+    },
+    {
+      "id": "salary",
+      "name": "salary",
+      "label": "Salary",
+      "value": "",
+      "type": "number",
+      "validations": {
+        "required": true
+      }
+  }
+ 
+]

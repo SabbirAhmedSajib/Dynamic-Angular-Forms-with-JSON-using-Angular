@@ -1,0 +1,24 @@
+<form [formGroup]="formValue" (ngSubmit)="onSubmit()">
+   
+        <div>
+            
+                <div *ngFor="let formField of filterFields" class="form-group">
+                    <label> {{ formField.label }}</label>
+                    <input class="form-control" 
+                            type="{{ formField.type }}" 
+                            value="{{ formField.value }}" 
+                            [required]="formField.required" 
+                            formControlName="{{ formField.name }}" />
+               
+                    <br>
+                </div>
+                
+            
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" 
+                            class="btn btn-primary" 
+                            [disabled]="this.formValue.invalid">ADD</button>
+        </div>
+</form>
